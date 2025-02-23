@@ -1,0 +1,21 @@
+﻿<Window x:Class="SpeechPlayground.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeechPlayground"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox Text="{Binding Log, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.Row="0" x:Name="txtGoogle" AcceptsReturn="True" Width="Auto" Height="Auto" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Width="150" Click="Button_Click">Run</Button>
+        </StackPanel>
+        <TextBox Text="{Binding Transcript, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.Row="2" x:Name="txtUnfiltered" AcceptsReturn="True" Width="Auto" Height="Auto" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>
