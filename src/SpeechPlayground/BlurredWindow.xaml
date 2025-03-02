@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Background="Black"
         AllowsTransparency="True"
-        WindowStyle="None" HorizontalAlignment="Left" VerticalAlignment="Top"
+        WindowStyle="None" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0"
         xmlns:controls="clr-namespace:SpeechPlayground.Controls"
         Title="BlurredWindow" Height="300" d:DesignWidth="800" BorderThickness="4" BorderBrush="#6DFFFFFF">
     

@@ -103,7 +103,7 @@ namespace SpeechPlayground.Controls
 
             foreach (var verse in verses)
             {
-                var verseBlock = new TextBlock() { FontSize = 18, Foreground = System.Windows.Media.Brushes.White, Margin = new Thickness(0, 2, 0, 2), TextWrapping = TextWrapping.Wrap };
+                var verseBlock = new TextBlock() { FontSize = 22, Foreground = System.Windows.Media.Brushes.White, Margin = new Thickness(0, 2, 0, 2), TextWrapping = TextWrapping.Wrap };
                 var numberRun = new Run($"{verse.Number}. ");
                 numberRun.FontWeight = FontWeights.Bold;
                 verseBlock.Inlines.Add(numberRun);

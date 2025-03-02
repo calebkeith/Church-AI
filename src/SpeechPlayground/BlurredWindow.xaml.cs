@@ -53,6 +53,11 @@ namespace SpeechPlayground
 
         public async Task LoadVerses(List<Verse> verses, List<Verse> contextualVerses)
         {
+            if (!verses?.Any() ?? true)
+                Opacity = 0;
+            else
+                Opacity = 1;
+
             await verseOverlay.SetVerses(verses, contextualVerses);
 
             contextTxt.Inlines.Clear();

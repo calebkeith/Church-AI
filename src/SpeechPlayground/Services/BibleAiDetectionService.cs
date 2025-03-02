@@ -43,7 +43,7 @@ namespace SpeechPlayground.Services
         {
             _googleAi = new GoogleAI(apiKey: "AIzaSyDTFaRaGbQHvAyBP-GzdivyxXX-ffpSMls");
             _model = _googleAi.GenerativeModel(model: Model.Gemini20Flash);
-            var cred = new ApiKeyCredential("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");
+            var cred = new ApiKeyCredential("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");
             var opts = new OpenAI.OpenAIClientOptions() { Endpoint = new Uri("https://openrouter.ai/api/v1") };
             OpenAI.OpenAIClient client = new OpenAI.OpenAIClient(cred, opts);
             _chat = client.GetChatClient("deepseek/deepseek-chat:free");
